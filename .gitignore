@@ -1,0 +1,29 @@
+# Environments and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+credentials
+.aws/
+
+# Infrastructure as Code (Terraform)
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+crash.log
+
+# Operating System and Editor files
+.DS_Store
+*.swp
+*.log
+
+# Build, cache and temporary directories
+lab-workdir/
+tmp/
+node_modules/
+__pycache__/
+*.pyc
+
+# Note: outputs/ folders in day directories are intentionally tracked (after redaction)
