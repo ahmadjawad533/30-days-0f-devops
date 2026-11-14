@@ -1,0 +1,58 @@
+# ==============================================================================
+# Command: ls -l /proc/self/fd; ulimit -n; ulimit -Hn
+# Timestamp: 2026-11-14T12:55:23Z
+# ==============================================================================
+
+--- Process File Descriptors (ls -l /proc/self/fd) ---
+total 0
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 0 -> /dev/pts/1
+l-wx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 1 -> /home/<redacted-user>/AWS Community builder/antygravity/day-01-linux-architecture/outputs/07-file-descriptors.txt
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 10 -> /proc/15407/fd
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 105 -> socket:[182951]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 108 -> socket:[182952]
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 12 -> /proc/5452/smaps
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 14 -> anon_inode:[eventpoll]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 15 -> anon_inode:[eventfd]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 18 -> anon_inode:[eventpoll]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 19 -> anon_inode:[eventfd]
+l-wx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 2 -> /home/<redacted-user>/AWS Community builder/antygravity/day-01-linux-architecture/outputs/07-file-descriptors.txt
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 20 -> anon_inode:[eventpoll]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 21 -> anon_inode:[eventfd]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 28 -> anon_inode:[eventpoll]
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 3 -> /opt/Antigravity/icudtl.dat
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 39 -> /opt/Antigravity/resources/app.asar
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 4 -> /opt/Antigravity/v8_context_snapshot.bin
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 42 -> /dev/dri/renderD128
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 48 -> pipe:[63727]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 5 -> socket:[59341]
+l-wx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 50 -> pipe:[63727]
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 53 -> /opt/Antigravity/chrome_100_percent.pak
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 54 -> /opt/Antigravity/chrome_200_percent.pak
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 55 -> /opt/Antigravity/locales/en-US.pak
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 56 -> /opt/Antigravity/resources.pak
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 57 -> anon_inode:inotify
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 58 -> /dev/shm/.org.chromium.Chromium.o3MeGV (deleted)
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 59 -> socket:[63209]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 6 -> socket:[59342]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 61 -> socket:[61867]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 62 -> socket:[61831]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 63 -> anon_inode:[eventpoll]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 64 -> anon_inode:[eventfd]
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 65 -> /dev/shm/.org.chromium.Chromium.fv0nnv (deleted)
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 66 -> socket:[63732]
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 67 -> /dev/shm/.org.chromium.Chromium.2NSRim (deleted)
+l-wx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 68 -> /home/<redacted-user>/.config/Antigravity/Local Storage/leveldb/LOG
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 7 -> pipe:[59343]
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 70 -> /home/<redacted-user>/.config/Antigravity/Local Storage/leveldb/LOCK
+l-wx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 71 -> /home/<redacted-user>/.config/Antigravity/Local Storage/leveldb/MANIFEST-000001
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 72 -> socket:[61846]
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 73 -> /home/<redacted-user>/.config/Antigravity/Dictionaries/en-US-10-1.bdic
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 74 -> /opt/Antigravity/v8_context_snapshot.bin
+lrwx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 75 -> socket:[63758]
+l-wx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 8 -> pipe:[59343]
+l-wx------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 83 -> /home/<redacted-user>/.config/Antigravity/Local Storage/leveldb/000003.log
+lr-x------ 1 <redacted-user> <redacted-user> 64 Nov 14 17:55 9 -> /proc/5452
+
+--- Open File Limits ---
+Soft limit (ulimit -n): 1048576
+Hard limit (ulimit -Hn): 1048576

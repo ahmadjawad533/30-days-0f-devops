@@ -1,0 +1,21 @@
+# ==============================================================================
+# Command: lsmod | head -n 15
+# Timestamp: 2026-11-14T12:55:23Z
+# ==============================================================================
+
+--- Top 15 Loaded Kernel Modules (lsmod | head -n 15) ---
+Module                  Size  Used by
+snd_seq_dummy          16384  0
+snd_hrtimer            16384  1
+rfcomm                114688  4
+snd_seq               139264  7 snd_seq_dummy
+snd_seq_device         16384  1 snd_seq
+xt_MASQUERADE          12288  1
+bridge                479232  0
+stp                    12288  1 bridge
+llc                    16384  2 bridge,stp
+xfrm_user              77824  1
+xfrm_algo              16384  1 xfrm_user
+xt_set                 24576  0
+ip_set                 69632  1 xt_set
+nft_chain_nat          12288  5
