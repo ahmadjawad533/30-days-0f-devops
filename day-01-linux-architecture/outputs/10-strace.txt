@@ -1,0 +1,6 @@
+# ==============================================================================
+# Command: strace -f -e trace=openat,read,write,execve cat <file>
+# Timestamp: 2026-11-14T12:55:23Z
+# ==============================================================================
+
+strace not installed; section skipped

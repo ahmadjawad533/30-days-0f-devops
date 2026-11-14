@@ -1,0 +1,15 @@
+# ==============================================================================
+# Command: cat /proc/1/comm; ps -o pid,ppid,stat,comm -p 1,$$; pstree -p $$
+# Timestamp: 2026-11-14T12:55:23Z
+# ==============================================================================
+
+--- PID 1 Command Name (/proc/1/comm) ---
+systemd
+
+--- Process Status for PID 1 and Current Shell ($$) ---
+    PID    PPID STAT COMMAND
+      1       0 Ss   systemd
+  15377    5452 S<s+ bash
+
+--- Process Ancestry Tree (pstree -p $$) ---
+bash(15377)---pstree(15388)

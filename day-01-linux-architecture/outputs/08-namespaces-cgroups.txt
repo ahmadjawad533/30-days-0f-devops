@@ -1,0 +1,20 @@
+# ==============================================================================
+# Command: ls -l /proc/self/ns; cat /proc/self/cgroup
+# Timestamp: 2026-11-14T12:55:23Z
+# ==============================================================================
+
+--- Process Namespaces (ls -l /proc/self/ns) ---
+total 0
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 cgroup -> cgroup:[4026531835]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 ipc -> ipc:[4026531839]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 mnt -> mnt:[4026531832]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 net -> net:[4026531833]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 pid -> pid:[4026531836]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 pid_for_children -> pid:[4026531836]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 time -> time:[4026531834]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 time_for_children -> time:[4026531834]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 user -> user:[4026531837]
+lrwxrwxrwx 1 <redacted-user> <redacted-user> 0 Nov 14 17:55 uts -> uts:[4026531838]
+
+--- Process Control Group Membership (cat /proc/self/cgroup) ---
+0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-antigravity-5166.scope

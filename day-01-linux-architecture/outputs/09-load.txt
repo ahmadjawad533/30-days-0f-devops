@@ -1,0 +1,9 @@
+# ==============================================================================
+# Command: cat /proc/loadavg
+# Timestamp: 2026-11-14T12:55:23Z
+# ==============================================================================
+
+--- System Load Average (/proc/loadavg) ---
+1.33 1.98 2.05 5/1221 15414
+
+Format: <1 min avg> <5 min avg> <15 min avg> <runnable/total entities> <last created PID>

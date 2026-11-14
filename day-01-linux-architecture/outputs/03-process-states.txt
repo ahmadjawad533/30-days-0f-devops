@@ -1,0 +1,17 @@
+# ==============================================================================
+# Command: ps -eo stat --no-headers | cut -c1 | sort | uniq -c
+# Timestamp: 2026-11-14T12:55:23Z
+# ==============================================================================
+
+--- System Process State Counts ---
+     79 I
+      2 R
+    214 S
+
+Legend:
+  R: Running or runnable (on run queue)
+  S: Interruptible sleep (waiting for an event to complete)
+  D: Uninterruptible sleep (usually waiting for I/O)
+  Z: Defunct / zombie (terminated but not reaped by parent)
+  T: Stopped by job control signal or traced
+  I: Idle kernel thread

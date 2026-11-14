@@ -1,0 +1,18 @@
+# ==============================================================================
+# Command: free -h; grep -E '^(MemTotal|MemFree|MemAvailable|Buffers|Cached|SwapTotal|SwapFree):' /proc/meminfo
+# Timestamp: 2026-11-14T12:55:23Z
+# ==============================================================================
+
+--- Human Readable Memory Overview (free -h) ---
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       5.4Gi       259Mi       599Mi       2.9Gi       2.3Gi
+Swap:          7.6Gi       3.5Gi       4.1Gi
+
+--- Selected /proc/meminfo Fields ---
+MemTotal:        7984412 kB
+MemFree:          265368 kB
+MemAvailable:    2374184 kB
+Buffers:              32 kB
+Cached:          2101572 kB
+SwapTotal:       7984124 kB
+SwapFree:        4343036 kB
