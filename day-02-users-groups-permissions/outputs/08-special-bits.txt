@@ -1,0 +1,11 @@
+# ==============================================================================
+# Command: ls -ld /tmp; stat -c '%A %U:%G %n' /usr/bin/passwd /usr/bin/sudo
+# Timestamp: 2026-11-15T06:07:08Z
+# ==============================================================================
+
+--- Sticky Bit on /tmp Directory ---
+drwxrwxrwt 29 root root 660 Nov 15 11:06 /tmp
+
+--- SUID Binaries Metadata ---
+-rwsr-xr-x root:root /usr/bin/passwd
+-rwsr-xr-x root:root /usr/bin/sudo

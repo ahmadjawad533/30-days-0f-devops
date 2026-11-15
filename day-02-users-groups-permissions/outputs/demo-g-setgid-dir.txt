@@ -1,0 +1,11 @@
+# ==============================================================================
+# Demo: setgid directory and group inheritance
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- SGID Directory Configuration ---
+Directory: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/sgid_dir  Mode: 2775 (drwxrwsr-x)  Group: sys
+
+--- File Created Inside SGID Directory ---
+Created File: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/sgid_dir/inherited_file.txt  Mode: 644 (-rw-r--r--)  Group: sys
+Observation: File automatically inherited parent directory's group 'sys' rather than process primary group '<redacted-username>'.

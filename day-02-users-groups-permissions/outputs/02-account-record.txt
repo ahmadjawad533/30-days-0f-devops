@@ -1,0 +1,10 @@
+# ==============================================================================
+# Command: getent passwd $(id -un); getent group $(id -gn) | cut -d: -f1,3
+# Timestamp: 2026-11-15T06:07:08Z
+# ==============================================================================
+
+--- Passwd Database Entry for Current User ---
+<redacted-username>:x:1000:1000:<redacted-username>:home/<redacted-username>:/bin/fish
+
+--- Primary Group Name and GID Only ---
+<redacted-username>:1000

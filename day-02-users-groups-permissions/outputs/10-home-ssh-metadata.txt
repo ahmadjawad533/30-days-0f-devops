@@ -1,0 +1,11 @@
+# ==============================================================================
+# Command: stat -c '%A %U:%G %n' "$HOME" and ~/.ssh
+# Timestamp: 2026-11-15T06:07:08Z
+# ==============================================================================
+
+--- User Home Directory Metadata ---
+drwx------ <redacted-username>:<redacted-username> home/<redacted-username>
+
+--- User .ssh Directory Metadata (If Present) ---
+drwx------ <redacted-username>:<redacted-username> /home/<redacted-username>/.ssh
+(Note: Listing or reading inside ~/.ssh is strictly prohibited for security)

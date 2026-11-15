@@ -1,0 +1,23 @@
+# ==============================================================================
+# sudoers-lab02-deploy.example - Least-Privilege Sudoers Rule Example
+# Part of "30 Days of DevOps" by Ahmad Jawad Bandesha
+#
+# LEAST PRIVILEGE RATIONALE:
+# 1. Why avoid ALL:
+#    Granting "ALL=(ALL) ALL" completely destroys the boundary between a service
+#    account and root. Any compromise of the service account immediately yields
+#    full cluster/root compromise.
+#
+# 2. Why avoid wildcards (*):
+#    Wildcards allow flag injection and command hijacking. For instance, allowing
+#    "/usr/bin/systemctl *" allows an attacker to run:
+#      sudo systemctl edit --stdin (launching interactive editor)
+#      sudo systemctl start malicious.service
+#      sudo systemctl status ../../../bin/bash
+#
+# 3. Specific, exact command only:
+#    This rule allows lab02_deploy to run ONLY the status check for one single
+#    specific unit file without a password prompt.
+# ==============================================================================
+
+lab02_deploy ALL=(root) NOPASSWD: /usr/bin/systemctl status lab02-demo.service

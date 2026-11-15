@@ -1,0 +1,9 @@
+# ==============================================================================
+# Command: ls -l /etc/passwd /etc/group /etc/shadow
+# Timestamp: 2026-11-15T06:07:08Z
+# ==============================================================================
+
+--- Permissions and Ownership of System Auth Databases ---
+-rw-r--r-- 1 root root 1254 Oct 19 04:16 /etc/group
+-rw-r--r-- 1 root root 2533 Oct 19 04:15 /etc/passwd
+-rw------- 1 root root 1175 Oct 19 04:15 /etc/shadow

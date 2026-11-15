@@ -1,0 +1,18 @@
+# ==============================================================================
+# Demo: umask in isolated subshells (077 vs 022)
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- Parent Shell Initial Umask ---
+Parent umask: 0022
+
+--- Subshell with umask 077 (Restricted: Owner Only) ---
+File (077): 600 (-rw-------)  /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/file_077.txt
+Dir  (077): 700 (drwx------)  /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/dir_077
+
+--- Subshell with umask 022 (Standard Linux Default) ---
+File (022): 644 (-rw-r--r--)  /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/file_022.txt
+Dir  (022): 755 (drwxr-xr-x)  /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/dir_022
+
+--- Parent Shell Final Umask Verification ---
+Parent umask remaining untouched: 0022

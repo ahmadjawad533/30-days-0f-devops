@@ -1,0 +1,13 @@
+# ==============================================================================
+# Command: awk UID count (<1000 vs >=1000); grep UID_MIN/MAX /etc/login.defs
+# Timestamp: 2026-11-15T06:07:08Z
+# ==============================================================================
+
+--- Account Counts by UID Boundary ---
+System accounts (UID < 1000):  38
+Regular accounts (UID >= 1000): 4
+Total accounts in /etc/passwd:  42
+
+--- UID Configuration from /etc/login.defs ---
+UID_MIN			 1000
+UID_MAX			60000

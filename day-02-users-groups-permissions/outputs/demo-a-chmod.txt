@@ -1,0 +1,16 @@
+# ==============================================================================
+# Demo: chmod with octal and symbolic modes
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- Initial State ---
+Mode: 644 (-rw-r--r--)  Owner: <redacted-username>  Group: <redacted-username>  File: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/file_a.txt
+
+--- After chmod 640 (Octal: u=rw, g=r, o=---) ---
+Mode: 640 (-rw-r-----)  File: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/file_a.txt
+
+--- After chmod g+w,o+r (Symbolic addition) ---
+Mode: 664 (-rw-rw-r--)  File: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/file_a.txt
+
+--- After chmod 400 (Read-only owner) ---
+Mode: 400 (-r--------)  File: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/file_a.txt
