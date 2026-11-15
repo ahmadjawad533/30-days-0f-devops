@@ -1,0 +1,20 @@
+# ==============================================================================
+# Demo: SSH private key permission rules (StrictModes simulated)
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- Case 1: Fake Key with Permissive Mode 644 (Simulating Client Rejection) ---
+Mode: 644 (-rw-r--r--)  File: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/fake_id_ed25519
+Why OpenSSH client refuses this:
+  Permissions 0644 are too open. It is required that your private key files are NOT accessible by others.
+  This private key will be ignored (UNPROTECTED PRIVATE KEY FILE!).
+
+--- Case 2: Fake Key with Correct Mode 600 (Restricted to Owner) ---
+Mode: 600 (-rw-------)  File: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/fake_id_ed25519
+Complies with OpenSSH requirement: Only file owner has read/write privileges.
+
+--- SSH Server StrictModes Context ---
+On the server side, OpenSSH sshd enforces 'StrictModes yes' by default:
+  1. ~/.ssh must have permissions 700 (or at least no group/world write: max 755).
+  2. ~/.ssh/authorized_keys must have permissions 600 (or at least no group/world write: max 644).
+  3. The user's home directory ($HOME) must NOT be writable by group or others.

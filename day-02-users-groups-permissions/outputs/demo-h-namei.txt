@@ -1,0 +1,18 @@
+# ==============================================================================
+# Demo: namei -l nested path resolution
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- namei -l Path Breakdown ---
+f: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/parent/child/grandchild/app.conf
+dr-xr-xr-x root  root  /
+drwxr-xr-x root  root  home
+drwx------ <redacted-username> <redacted-username> <redacted-username>
+drwxr-xr-x <redacted-username> <redacted-username> AWS Community builder
+drwxr-xr-x <redacted-username> <redacted-username> antygravity
+drwxr-xr-x <redacted-username> <redacted-username> day-02-users-groups-permissions
+drwxr-xr-x <redacted-username> <redacted-username> lab-workdir
+drwxr-xr-x <redacted-username> <redacted-username> parent
+drwxr-xr-x <redacted-username> <redacted-username> child
+drwxr-xr-x <redacted-username> <redacted-username> grandchild
+-rw-r--r-- <redacted-username> <redacted-username> app.conf

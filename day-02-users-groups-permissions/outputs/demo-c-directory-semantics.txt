@@ -1,0 +1,20 @@
+# ==============================================================================
+# Demo: Directory semantics: read without execute vs execute without read
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+=== Case 1: Directory with READ but NO EXECUTE (mode 400) ===
+Attempting 'ls' (reads directory directory-table entries):
+target.txt
+Attempting 'cd' (requires execute bit to traverse):
+./permissions-lab.sh: line 142: cd: /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/dir_read_only: Permission denied
+Attempting 'cat' of known file (requires traversal to resolve inode):
+cat: '/home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/dir_read_only/target.txt': Permission denied
+
+=== Case 2: Directory with EXECUTE but NO READ (mode 100) ===
+Attempting 'ls' (fails because read bit is missing):
+ls: cannot open directory '/home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/dir_exec_only': Permission denied
+Attempting 'cd' (succeeds because execute allows traversal):
+/home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/dir_exec_only
+Attempting 'cat' of known file (succeeds! Traversal resolves inode without directory listing):
+content-in-exec-dir

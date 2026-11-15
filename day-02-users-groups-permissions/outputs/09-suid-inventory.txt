@@ -1,0 +1,28 @@
+# ==============================================================================
+# Command: find /usr/bin /usr/sbin -xdev -perm /6000 -type f | head -n 20 (and total count)
+# Timestamp: 2026-11-15T06:07:08Z
+# ==============================================================================
+
+--- First 20 SUID/SGID Files in /usr/bin and /usr/sbin ---
+/usr/bin/ksu
+/usr/bin/chage
+/usr/bin/gpasswd
+/usr/bin/passwd
+/usr/bin/sudo
+/usr/bin/fusermount3
+/usr/bin/plocate
+/usr/bin/unix_chkpwd
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/mount
+/usr/bin/newgrp
+/usr/bin/su
+/usr/bin/umount
+/usr/bin/wall
+/usr/bin/write
+/usr/bin/mount.nfs
+/usr/bin/mount.cifs
+/usr/bin/pkexec
+
+--- Total SUID/SGID Count in /usr/bin and /usr/sbin ---
+Total files with SUID or SGID set: 19

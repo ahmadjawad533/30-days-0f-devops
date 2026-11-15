@@ -1,0 +1,19 @@
+# ==============================================================================
+# Demo: POSIX Access Control Lists (ACL) check
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- getfacl Output on File with Extended ACL ---
+getfacl: Removing leading '/' from absolute path names
+# file: home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/acl_test.txt
+# owner: <redacted-username>
+# group: <redacted-username>
+user::rw-
+user:<redacted-username>:r--
+group::---
+mask::r--
+other::---
+
+
+--- ls -l Indicator (+ sign shows extended ACL present) ---
+-rw-r-----+ 1 <redacted-username> <redacted-username> 0 Nov 15 11:07 /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/acl_test.txt

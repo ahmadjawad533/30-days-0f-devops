@@ -1,0 +1,16 @@
+# ==============================================================================
+# Command: id; id -un; id -gn; id -Gn
+# Timestamp: 2026-11-15T06:07:07Z
+# ==============================================================================
+
+--- Full Identity (id) ---
+uid=1000(<redacted-username>) gid=1000(<redacted-username>) groups=1000(<redacted-username>),3(sys),90(network),951(docker),967(nopasswdlogin),980(rfkill),982(users),983(video),985(storage),989(lp),995(audio),998(wheel)
+
+--- User Name (id -un) ---
+<redacted-username>
+
+--- Primary Group Name (id -gn) ---
+<redacted-username>
+
+--- All Group Memberships (id -Gn) ---
+<redacted-username> sys network docker nopasswdlogin rfkill users video storage lp audio wheel

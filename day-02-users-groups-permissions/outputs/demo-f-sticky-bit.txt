@@ -1,0 +1,12 @@
+# ==============================================================================
+# Demo: Sticky bit behavior on directories (mode 1777)
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- Sticky Directory Attributes ---
+drwxrwxrwt 1 <redacted-username> <redacted-username> 0 Nov 15 11:07 /home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/shared_sticky
+Mode: 1777 (drwxrwxrwt)  Sticky bit indicator: drwxrwxrwt
+
+Explanation: When the sticky bit (1000 / 't') is set on a world-writable directory (e.g. /tmp),
+unprivileged users can create files, but can ONLY delete or rename files they personally own
+or if they own the parent directory (or root).

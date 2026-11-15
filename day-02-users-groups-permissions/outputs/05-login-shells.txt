@@ -1,0 +1,11 @@
+# ==============================================================================
+# Command: cut -d: -f7 /etc/passwd | sort | uniq -c
+# Timestamp: 2026-11-15T06:07:08Z
+# ==============================================================================
+
+--- Distinct Login Shells and Counts ---
+     37 /usr/bin/nologin
+      2 /bin/bash
+      1 /usr/bin/git-shell
+      1 /usr/bin/bash
+      1 /bin/fish

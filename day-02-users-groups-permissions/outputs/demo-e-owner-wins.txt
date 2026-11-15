@@ -1,0 +1,12 @@
+# ==============================================================================
+# Demo: Owner class wins: kernel evaluates only owner bits when UID matches
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- File Permissions and Ownership ---
+Mode: 47 (----r--rwx)  Owner: <redacted-username>  Group: <redacted-username>
+
+Current Process User: <redacted-username> (Matches file owner)
+Attempting 'cat' as file owner:
+cat: '/home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/owner_trap.txt': Permission denied
+DENIED (EACCES): Kernel found matching owner UID, checked owner bits (---), and immediately denied access. Group (r--) and Other (rwx) were never evaluated.

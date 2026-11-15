@@ -1,0 +1,8 @@
+# ==============================================================================
+# Command: getent group wheel / sudo | cut -d: -f1,3
+# Timestamp: 2026-11-15T06:07:08Z
+# ==============================================================================
+
+--- Admin Group Identifiers (Members Hidden for Safety) ---
+Group 'wheel': wheel:998
+Group 'sudo': (not present on this system)

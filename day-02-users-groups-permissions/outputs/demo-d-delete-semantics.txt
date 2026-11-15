@@ -1,0 +1,17 @@
+# ==============================================================================
+# Demo: File deletion depends on parent directory write permissions
+# Timestamp: 2026-11-15T06:07:13Z
+# ==============================================================================
+
+--- Case 1: Removing mode 444 file from WRITABLE directory (mode 755) ---
+File: 444 (-r--r--r--)  Parent Dir: 444 (-r--r--r--)
+File: 755 (drwxr-xr-x)  Parent Dir: 755 (drwxr-xr-x)
+Attempting rm -f:
+SUCCESS: Read-only file deleted because parent directory has write permission!
+
+--- Case 2: Removing mode 777 file from READ-ONLY directory (mode 555) ---
+File: 777 (-rwxrwxrwx)  Parent Dir: 777 (-rwxrwxrwx)
+File: 555 (dr-xr-xr-x)  Parent Dir: 555 (dr-xr-xr-x)
+Attempting rm -f:
+rm: cannot remove '/home/<redacted-username>/AWS Community builder/antygravity/day-02-users-groups-permissions/lab-workdir/delete_demo_dir/file_in_ro_dir.txt': Permission denied
+FAILED as expected: Cannot modify directory table when parent lacks write bit.
