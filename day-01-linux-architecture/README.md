@@ -1,6 +1,6 @@
 # Day 01: Linux Architecture Explained: What Every DevOps Engineer Should Know
 
-Article: [link TBD]
+Article: [AWS Builder Center: Day 01 - Linux Architecture Explained](https://builder.aws.com/content/3M6BTNoMOOt2v3Np5Sw2gHXkdAh/day-01-linux-architecture-explained-what-every-devops-engineer-should-know)
 
 Welcome to Day 01 of the **30 Days of DevOps** series. Before automating cloud deployments or containerizing microservices, every DevOps and Cloud engineer must understand how Linux operates beneath the abstractions. This lab provides hands-on inspection scripts to observe the real kernel, process hierarchy, memory management, virtual filesystems, and the system call interface on your running host.
 

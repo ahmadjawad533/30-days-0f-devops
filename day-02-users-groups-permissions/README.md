@@ -1,6 +1,6 @@
 # Day 02: Linux Server Administration: Users, Groups and File Permissions
 
-Article: [link TBD]
+Article: [AWS Builder Center: Day 02 - Linux Server Administration](https://builder.aws.com/content/3M8Dj3jwVHdHkzUAzCtfpy35xJJ/day-02-linux-server-administration-users-groups-and-file-permissions)
 
 Welcome to Day 02 of the **30 Days of DevOps** series. Mastering Linux identity, ownership, and permissions is the bedrock of server hardening, container privilege separation, CI/CD runner isolation, and cloud infrastructure security. This lab combines read-only identity inspection with project-local, unprivileged permission experiments to illustrate how the Linux kernel evaluates access.
 

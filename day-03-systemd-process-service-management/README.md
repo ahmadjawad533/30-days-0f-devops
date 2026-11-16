@@ -1,6 +1,6 @@
 # Day 03: Linux Process and Service Management with systemd
 
-Article: [link TBD]
+Article: [AWS Builder Center: Day 03 - Linux Process and Service Management with systemd](https://builder.aws.com/content/3MBas2ttNFy4D8FfkhnRzj9LD2r/day-03-linux-process-and-service-management-with-systemd)
 
 Welcome to Day 03 of the **30 Days of DevOps** series. Modern cloud engineering and container orchestration depend heavily on systemd and Linux process management concepts—from signal handling (graceful SIGTERM vs forceful SIGKILL) and control groups (cgroups) to service dependencies and automatic crash recovery. This lab explores real-world systemd inspection, unprivileged process signal experimentation, and user service management.
 
