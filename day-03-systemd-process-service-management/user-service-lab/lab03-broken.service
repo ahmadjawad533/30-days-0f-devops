@@ -1,0 +1,12 @@
+[Unit]
+Description=Day 03 Lab: Broken Service Demonstrating ExecStart Failure
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/nonexistent/lab03-binary
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

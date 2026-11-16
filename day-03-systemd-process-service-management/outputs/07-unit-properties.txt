@@ -1,0 +1,14 @@
+# ==============================================================================
+# Command: systemctl show systemd-journald.service -p Id,Type,Restart,MainPID,ActiveState,SubState,ControlGroup,FragmentPath --no-pager
+# Timestamp: 2026-11-16T10:57:06Z
+# ==============================================================================
+
+--- Selected Property Values ---
+Id=systemd-journald.service
+ActiveState=active
+SubState=running
+FragmentPath=/usr/lib/systemd/system/systemd-journald.service
+Type=notify-reload
+Restart=always
+MainPID=244
+ControlGroup=/system.slice/systemd-journald.service

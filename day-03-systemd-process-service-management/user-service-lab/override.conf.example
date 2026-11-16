@@ -1,0 +1,25 @@
+# ==============================================================================
+# override.conf.example - systemd Drop-In Override Example
+# Part of "30 Days of DevOps" by Ahmad Jawad Bandesha
+#
+# PURPOSE:
+# Demonstrates extending a unit without modifying the vendor unit file.
+# Drop-ins are placed under:
+#   ~/.config/systemd/user/<unit-name>.service.d/override.conf
+# ==============================================================================
+
+[Service]
+# Override restart backoff delay
+RestartSec=5
+
+# Inject application environment variables (never store secrets here)
+Environment="LAB03_MODE=override"
+
+# Security Hardening Directive:
+# NoNewPrivileges ensures the service and any child processes cannot gain new privileges (e.g. via SUID).
+NoNewPrivileges=yes
+
+# Note on PrivateTmp in user services:
+# In unprivileged user systemd instances, PrivateTmp=yes creates an isolated mount namespace for /tmp.
+# Its availability depends on unprivileged user namespace support on the host kernel.
+PrivateTmp=yes

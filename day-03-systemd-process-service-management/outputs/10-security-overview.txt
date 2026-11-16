@@ -1,0 +1,21 @@
+# ==============================================================================
+# Command: systemd-analyze security --no-pager | head -n 15
+# Timestamp: 2026-11-16T10:57:06Z
+# ==============================================================================
+
+--- Service Exposure Scores (First 15 Lines) ---
+UNIT                                  EXPOSURE PREDICATE HAPPY
+NetworkManager.service                     6.8 MEDIUM    :-|
+accounts-daemon.service                    5.5 MEDIUM    :-|
+alsa-state.service                         9.6 UNSAFE    :-{
+ananicy-cpp.service                        4.3 OK        :-)
+auditd.service                             9.4 UNSAFE    :-{
+avahi-daemon.service                       4.2 OK        :-)
+bluetooth.service                          6.0 MEDIUM    :-|
+colord.service                             3.5 OK        :-)
+containerd.service                         9.6 UNSAFE    :-{
+dbus-broker.service                        8.7 EXPOSED   :-(
+dirmngr@etc-pacman.d-gnupg.service         9.6 UNSAFE    :-{
+dm-event.service                           9.5 UNSAFE    :-{
+docker.service                             9.6 UNSAFE    :-{
+emergency.service                          9.5 UNSAFE    :-{

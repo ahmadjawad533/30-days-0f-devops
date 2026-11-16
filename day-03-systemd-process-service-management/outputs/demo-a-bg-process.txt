@@ -1,0 +1,9 @@
+# ==============================================================================
+# Demo: Start background process and inspect PID/attributes
+# Timestamp: 2026-11-16T10:57:13Z
+# ==============================================================================
+
+Spawned child PID: 41195
+--- Process Status (ps -o pid,ppid,stat,ni,comm) ---
+    PID    PPID STAT  NI COMMAND
+  41195   41189 S<+   -8 sleep

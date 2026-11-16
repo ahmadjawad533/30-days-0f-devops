@@ -1,0 +1,12 @@
+[Unit]
+Description=Day 03 Lab: Educational Heartbeat User Service
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env bash -c 'while true; do echo "Lab03 heartbeat alive at $$(date -u +%%Y-%%m-%%dT%%H:%%M:%%SZ)"; sleep 5; done'
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

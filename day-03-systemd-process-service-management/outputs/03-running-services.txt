@@ -1,0 +1,21 @@
+# ==============================================================================
+# Command: systemctl list-units --type=service --state=running --no-legend --no-pager | awk '{print $1}' | head -n 15
+# Timestamp: 2026-11-16T10:57:04Z
+# ==============================================================================
+
+--- Active Running Service Unit Names (Top 15) ---
+accounts-daemon.service
+ananicy-cpp.service
+avahi-daemon.service
+bluetooth.service
+colord.service
+containerd.service
+dbus-broker.service
+docker.service
+gdm.service
+NetworkManager.service
+polkit.service
+power-profiles-daemon.service
+systemd-journald.service
+systemd-logind.service
+systemd-oomd.service

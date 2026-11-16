@@ -1,0 +1,26 @@
+# ==============================================================================
+# Command: systemctl list-dependencies default.target --no-pager | head -n 20
+# Timestamp: 2026-11-16T10:57:06Z
+# ==============================================================================
+
+--- Default Target Dependency Tree (First 20 Lines) ---
+default.target
+● ├─gdm.service
+● └─multi-user.target
+●   ├─ananicy-cpp.service
+●   ├─avahi-daemon.service
+●   ├─cachyos-iw-set-regdomain.path
+●   ├─dbus-broker.service
+●   ├─docker.service
+×   ├─kirocrew.service
+○   ├─limine-snapper-sync.service
+○   ├─ly@tty2.service
+●   ├─NetworkManager.service
+●   ├─plymouth-quit-wait.service
+○   ├─plymouth-quit.service
+●   ├─systemd-ask-password-wall.path
+●   ├─systemd-logind.service
+●   ├─systemd-user-sessions.service
+●   ├─ufw.service
+●   ├─basic.target
+●   │ ├─-.mount

@@ -1,0 +1,18 @@
+# ==============================================================================
+# Demo: Process job suspension with SIGSTOP (T) and resumption with SIGCONT (S)
+# Timestamp: 2026-11-16T10:57:14Z
+# ==============================================================================
+
+--- Initial Running State ---
+    PID STAT COMMAND
+  41214 S<+  sleep
+
+--- Sending SIGSTOP (kill -STOP 41214) ---
+    PID STAT COMMAND
+  41214 T<+  sleep
+Note: Stat contains 'T' (stopped by job control signal).
+
+--- Sending SIGCONT (kill -CONT 41214) ---
+    PID STAT COMMAND
+  41214 S<+  sleep
+Note: Stat returned to 'S' (interruptible sleep).
