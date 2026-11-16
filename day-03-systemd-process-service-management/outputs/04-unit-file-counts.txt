@@ -1,0 +1,13 @@
+# ==============================================================================
+# Command: systemctl list-unit-files --type=service --no-legend --no-pager | awk '{print $2}' | sort | uniq -c
+# Timestamp: 2026-11-16T10:57:04Z
+# ==============================================================================
+
+--- Service Unit File States (Enabled / Disabled / Static / Masked) ---
+    230 static
+    123 disabled
+     19 alias
+     14 enabled
+     12 indirect
+      3 masked-runtime
+      1 enabled-runtime

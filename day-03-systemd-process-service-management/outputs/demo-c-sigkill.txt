@@ -1,0 +1,10 @@
+# ==============================================================================
+# Demo: Send SIGKILL (Signal 9) and record exit status
+# Timestamp: 2026-11-16T10:57:13Z
+# ==============================================================================
+
+Spawned child PID: 41199
+Sending SIGKILL (kill -KILL 41199)...
+Process 41199 terminated.
+Exit status: 137
+Explanation: 128 + 9 (SIGKILL) = 137. Uncatchable kernel-level process termination.

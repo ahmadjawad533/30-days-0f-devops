@@ -1,0 +1,10 @@
+# ==============================================================================
+# Command: systemctl is-system-running; systemctl get-default
+# Timestamp: 2026-11-16T10:57:04Z
+# ==============================================================================
+
+--- Overall System Running State (is-system-running) ---
+degraded
+
+--- Default Boot Target (get-default) ---
+graphical.target

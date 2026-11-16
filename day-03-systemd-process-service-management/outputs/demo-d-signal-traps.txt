@@ -1,0 +1,13 @@
+# ==============================================================================
+# Demo: Signal Trapping: Catching SIGTERM vs uncatchable SIGKILL
+# Timestamp: 2026-11-16T10:57:13Z
+# ==============================================================================
+
+--- Case 1: Child with trap on SIGTERM ---
+Sending SIGTERM to PID 41201...
+caught SIGTERM
+Child 41201 handled SIGTERM cleanly. Exit code: 0
+
+--- Case 2: Child with trap on SIGTERM, receiving SIGKILL ---
+Sending SIGKILL to PID 41204...
+Child 41204 terminated by SIGKILL (trap had no effect). Exit code: 137

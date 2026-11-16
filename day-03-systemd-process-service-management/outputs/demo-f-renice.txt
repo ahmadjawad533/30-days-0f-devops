@@ -1,0 +1,14 @@
+# ==============================================================================
+# Demo: Process Niceness and Priority adjustment (renice)
+# Timestamp: 2026-11-16T10:57:14Z
+# ==============================================================================
+
+--- Initial Priority with nice -n 5 ---
+    PID  NI PRI STAT COMMAND
+  41222   1  18 RN+  sleep
+
+--- Raising Niceness to 10 with renice (Unprivileged) ---
+41222 (process ID) old priority 1, new priority 10
+    PID  NI PRI STAT COMMAND
+  41222  10   9 SN+  sleep
+Note: Raising niceness (lowering CPU priority) requires no root privileges.

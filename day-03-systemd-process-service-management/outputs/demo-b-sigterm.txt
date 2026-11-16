@@ -1,0 +1,10 @@
+# ==============================================================================
+# Demo: Send SIGTERM (Signal 15) and record exit status
+# Timestamp: 2026-11-16T10:57:13Z
+# ==============================================================================
+
+Target process PID: 41195
+Sending SIGTERM (kill -TERM 41195)...
+Process 41195 terminated.
+Exit status: 143
+Explanation: 128 + 15 (SIGTERM) = 143. Standard POSIX exit code for signal termination.

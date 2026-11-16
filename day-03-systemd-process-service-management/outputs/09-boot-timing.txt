@@ -1,0 +1,8 @@
+# ==============================================================================
+# Command: systemd-analyze | head -n 5
+# Timestamp: 2026-11-16T10:57:06Z
+# ==============================================================================
+
+--- Boot Timing Breakdown ---
+Startup finished in 13.930s (firmware) + 5.779s (loader) + 1.124s (kernel) + 1.772s (initrd) + 15.563s (userspace) = 38.171s 
+graphical.target reached after 15.471s in userspace.

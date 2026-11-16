@@ -1,0 +1,16 @@
+# ==============================================================================
+# Demo: Zombie process lifecycle: child exits, parent delays wait()
+# Timestamp: 2026-11-16T10:57:14Z
+# ==============================================================================
+
+Parent PID: 41228
+Child PID: 41230
+
+--- Inspecting Child Process State in Process Table ---
+    PID    PPID STAT COMMAND
+  41230   41228 Z<+  python3 <defunct>
+Observation: Child state is 'Z' (defunct / zombie) because parent has not reaped it via wait().
+
+--- Terminating Parent Process (41228) ---
+--- Verifying Zombie Removal ---
+Zombie process 41230 successfully reaped by PID 1 (init) upon parent termination.
