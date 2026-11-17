@@ -1,0 +1,16 @@
+# ==============================================================================
+# Demo: Execute script-template.sh with -h and verify exit code
+# Timestamp: 2026-11-16T11:19:14Z
+# ==============================================================================
+
+Usage: script-template.sh [OPTIONS]
+
+A hardened Bash script template demonstrating best practices.
+
+Options:
+  -v           Enable verbose logging
+  -h           Show this help message and exit
+exit=0
+
+Executing script-template.sh without arguments:
+exit=0

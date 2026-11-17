@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# WARNING: DO NOT RUN THIS SCRIPT!
+# THIS FILE DEMONSTRATES COMMON ANTI-PATTERNS AND CATASTROPHIC SHELL VULNERABILITIES.
+# STORED DELIBERATELY AS A .txt FILE WITHOUT THE EXECUTE BIT.
+# ==============================================================================
+
+# FLAW 1: Blind "set -e" without error handling
+set -e
+
+# FLAW 2: Missing "set -u" and unquoted variable expansion
+# If TARGET_DIR is unset, empty, or misnamed, this expands to:
+#   rm -rf / *
+# which attempts to erase the entire operating system.
+TARGET_DIR=
+rm -rf $TARGET_DIR/*
+
+# FLAW 3: No path safety guards
+# Accepts any dangerous path without verifying canonical realpath or boundaries.
+# rm -rf /
+
+# FLAW 4: Blind command pipelining without pipefail
+# curl http://broken-host/bad.sh | bash

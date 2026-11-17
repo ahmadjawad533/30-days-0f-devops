@@ -1,0 +1,11 @@
+[Unit]
+Description=Day 04 Lab: Periodic Automated Backup Timer
+Documentation=https://github.com/ahmadjawad533/30-days-0f-devops
+
+[Timer]
+# Fires every 5 minutes for demonstration (OnCalendar=*:0/5)
+OnCalendar=*:0/5
+Persistent=false
+
+[Install]
+WantedBy=timers.target

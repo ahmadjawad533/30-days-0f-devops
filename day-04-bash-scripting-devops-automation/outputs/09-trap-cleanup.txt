@@ -1,0 +1,13 @@
+# ==============================================================================
+# Demo: Simulate slow operation, send SIGTERM, and verify temp file cleanup
+# Timestamp: 2026-11-16T11:19:10Z
+# ==============================================================================
+
+Launching backup-rotate.sh with simulated 4-second delay...
+Inspecting destination directory while backup is in progress:
+/home/<redacted-username>/AWS Community builder/antygravity/day-04-bash-scripting-devops-automation/lab-workdir/backups/tmp.backup.a5o6GO.tar.gz
+Sending SIGTERM to running backup PID 44244...
+
+Inspecting destination directory after SIGTERM termination (Expected: 0 tmp files remain):
+Remaining temp files: 0
+Observation: Trap on TERM cleanly destroyed incomplete scratch file.

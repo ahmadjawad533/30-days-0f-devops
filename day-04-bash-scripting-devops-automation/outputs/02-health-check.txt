@@ -1,0 +1,47 @@
+# ==============================================================================
+# Demo: Health check execution under normal and forced warning/critical conditions
+# Timestamp: 2026-11-16T11:18:59Z
+# ==============================================================================
+
+--- Run 1: Default Thresholds (Expected: Exit 0 or normal status) ---
+==============================================================================
+Host Health & Readiness Report
+Timestamp: 2026-11-16T11:18:59Z
+==============================================================================
+Disk Usage (. on /home): 57% (Warn: 80%, Crit: 95%) -> [OK]
+Available Memory: 13% (1049 MB / 7797 MB) (Warn <= 20%, Crit <= 10%) -> [WARNING]
+CPU Load (1m): 5.20 across 4 CPU cores (Warn: >= 8, Crit: >= 16) -> [OK]
+Failed systemd Units: 2 -> [WARNING]
+------------------------------------------------------------------------------
+Overall Health Assessment: WARNING (Exit 1)
+==============================================================================
+exit=1
+
+--- Run 2: Deliberately Tiny Disk Threshold (-d 1) To Force Critical Exit ---
+==============================================================================
+Host Health & Readiness Report
+Timestamp: 2026-11-16T11:18:59Z
+==============================================================================
+Disk Usage (. on /home): 57% (Warn: 1%, Crit: 2%) -> [CRITICAL]
+Available Memory: 13% (1049 MB / 7797 MB) (Warn <= 20%, Crit <= 10%) -> [WARNING]
+CPU Load (1m): 5.20 across 4 CPU cores (Warn: >= 8, Crit: >= 16) -> [OK]
+Failed systemd Units: 2 -> [WARNING]
+------------------------------------------------------------------------------
+Overall Health Assessment: CRITICAL (Exit 2)
+==============================================================================
+exit=2
+
+--- Run 3: Testing Inactive Port Listener (-t 65432) ---
+==============================================================================
+Host Health & Readiness Report
+Timestamp: 2026-11-16T11:18:59Z
+==============================================================================
+Disk Usage (. on /home): 57% (Warn: 80%, Crit: 95%) -> [OK]
+Available Memory: 13% (1049 MB / 7797 MB) (Warn <= 20%, Crit <= 10%) -> [WARNING]
+CPU Load (1m): 5.20 across 4 CPU cores (Warn: >= 8, Crit: >= 16) -> [OK]
+Failed systemd Units: 2 -> [WARNING]
+TCP Port 65432 Listener: NOT LISTENING -> [WARNING]
+------------------------------------------------------------------------------
+Overall Health Assessment: WARNING (Exit 1)
+==============================================================================
+exit=1
