@@ -1,0 +1,9 @@
+# ==============================================================================
+# Demo: Execute backup-rotate.sh with -n (dry-run)
+# Timestamp: 2026-11-16T11:18:59Z
+# ==============================================================================
+
+exit=0
+
+--- Verifying Nothing Was Created in Destination Directory ---
+Total files in backups directory after dry-run: 0

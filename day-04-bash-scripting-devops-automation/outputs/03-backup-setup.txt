@@ -1,0 +1,15 @@
+# ==============================================================================
+# Demo: Set up source directory with test files (including filename with spaces)
+# Timestamp: 2026-11-16T11:18:59Z
+# ==============================================================================
+
+--- Created Source Files ---
+total 12
+-rw-r--r-- 1 <redacted-username> <redacted-username> 37 Nov 16 16:18 app.conf
+-rw-r--r-- 1 <redacted-username> <redacted-username> 59 Nov 16 16:18 audit log 2026.txt
+-rw-r--r-- 1 <redacted-username> <redacted-username> 58 Nov 16 16:18 db.env
+
+--- Destination Directory Initial State ---
+total 0
+drwxr-xr-x 1 <redacted-username> <redacted-username>  0 Nov 16 16:18 .
+drwxr-xr-x 1 <redacted-username> <redacted-username> 26 Nov 16 16:18 ..

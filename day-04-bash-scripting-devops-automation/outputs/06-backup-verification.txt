@@ -1,0 +1,12 @@
+# ==============================================================================
+# Demo: Verify newest archive contents and integrity via tar -tzf
+# Timestamp: 2026-11-16T11:19:05Z
+# ==============================================================================
+
+Newest archive: backup-20261116-111904.tar.gz
+
+--- Listing Archive Contents (tar -tzf) ---
+./
+./app.conf
+./db.env
+./audit log 2026.txt

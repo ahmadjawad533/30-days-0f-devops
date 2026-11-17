@@ -1,0 +1,16 @@
+# ==============================================================================
+# Demo: bash -n syntax validation & shellcheck status
+# Timestamp: 2026-11-16T11:18:59Z
+# ==============================================================================
+
+--- Validating Shell Syntax (bash -n) ---
+Syntax OK: backup-rotate.sh
+Syntax OK: health-check.sh
+Syntax OK: script-template.sh
+Syntax OK: fixed-cleanup.sh
+Syntax OK: cleanup-timer-lab.sh
+Syntax OK: run-timer-lab.sh
+Syntax OK: run-demo.sh
+
+--- ShellCheck Static Analysis Check ---
+shellcheck not installed; skipped

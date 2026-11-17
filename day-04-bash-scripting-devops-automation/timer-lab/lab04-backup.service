@@ -1,0 +1,8 @@
+[Unit]
+Description=Day 04 Lab: Periodic Automated Backup Service
+Documentation=https://github.com/ahmadjawad533/30-days-0f-devops
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=@REPO_DIR@/scripts/backup-rotate.sh -s @REPO_DIR@/lab-workdir/source -d @REPO_DIR@/lab-workdir/backups -k 3

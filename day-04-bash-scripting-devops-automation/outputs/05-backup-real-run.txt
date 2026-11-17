@@ -1,0 +1,16 @@
+# ==============================================================================
+# Demo: Execute 5 successive backups with -k 3 and verify oldest are rotated out
+# Timestamp: 2026-11-16T11:19:00Z
+# ==============================================================================
+
+>>> Executing backup run 1 of 5...
+>>> Executing backup run 2 of 5...
+>>> Executing backup run 3 of 5...
+>>> Executing backup run 4 of 5...
+>>> Executing backup run 5 of 5...
+
+--- Destination Directory Contents After Rotation (Expected exactly 3 newest archives) ---
+total 12
+-rw------- 1 <redacted-username> <redacted-username> 318 Nov 16 16:19 backup-20261116-111902.tar.gz
+-rw------- 1 <redacted-username> <redacted-username> 318 Nov 16 16:19 backup-20261116-111903.tar.gz
+-rw------- 1 <redacted-username> <redacted-username> 318 Nov 16 16:19 backup-20261116-111904.tar.gz

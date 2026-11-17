@@ -1,0 +1,16 @@
+# ==============================================================================
+# Demo: Path guard tests: missing source, path outside workdir (/etc), empty -s, invalid -k
+# Timestamp: 2026-11-16T11:19:05Z
+# ==============================================================================
+
+--- Test 1: Missing Source Directory ---
+exit=3
+
+--- Test 2: Source Outside Allowed Workspace (/etc) ---
+exit=3
+
+--- Test 3: Empty -s Value ---
+exit=3
+
+--- Test 4: Invalid Keep Count (-k 0) ---
+exit=3

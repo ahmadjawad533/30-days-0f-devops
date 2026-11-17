@@ -1,0 +1,15 @@
+# ==============================================================================
+# Demo: fixed-cleanup.sh: dry-run, real deletion, and empty variable refusal
+# Timestamp: 2026-11-16T11:19:14Z
+# ==============================================================================
+
+--- Run 1: Dry-Run Mode (Without -f) ---
+Files still present after dry-run:
+junk1.tmp
+junk2.tmp
+
+--- Run 2: Real Deletion Mode (-f) ---
+Files present after forced deletion:
+
+--- Run 3: Testing Refusal of Path Outside Allowed Directory (/etc) ---
+exit=3
