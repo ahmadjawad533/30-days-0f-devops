@@ -1,0 +1,4 @@
+# Command: grep -v '^#' /etc/systemd/journald.conf | grep -v '^$'
+# Timestamp: 2026-11-17T16:02:50+05:00
+[Journal]
+# End of 03-journald-conf.txt

@@ -14,7 +14,7 @@ Welcome to **30 Days of DevOps: From Linux Administration to AWS Cloud Engineeri
 | 02 | Linux Server Administration: Users, Groups and File Permissions | In progress | TBD | [day-02-users-groups-permissions/](day-02-users-groups-permissions/) |
 | 03 | Linux Process and Service Management with systemd | In progress | TBD | [day-03-systemd-process-service-management/](day-03-systemd-process-service-management/) |
 | 04 | Bash Scripting for DevOps: Automating Everyday Linux Tasks | In progress | TBD | [day-04-bash-scripting-devops-automation/](day-04-bash-scripting-devops-automation/) |
-| 05 | Linux Log Management and Troubleshooting for Cloud Engineers | Planned | TBD | TBD |
+| 05 | Linux Log Management and Troubleshooting for Cloud Engineers | In progress | TBD | [day-05-linux-log-management-troubleshooting/](day-05-linux-log-management-troubleshooting/) |
 | **Phase 2** | **Docker and Containers** | | | |
 | 06 | Docker Architecture Explained: Images, Containers and Docker Engine | Planned | TBD | TBD |
 | 07 | Writing Production-Ready Dockerfiles: Containerizing a Python Application | Planned | TBD | TBD |

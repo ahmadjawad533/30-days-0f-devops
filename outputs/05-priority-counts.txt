@@ -1,0 +1,10 @@
+# Command: journalctl -b -o json --no-pager 2>/dev/null | jq -r '.PRIORITY' | sort | uniq -c
+# Timestamp: 2026-11-17T16:02:50+05:00
+      2 2
+     71 3
+   1500 4
+   1481 5
+  13452 6
+    181 7
+      1 null
+# End of 05-priority-counts.txt
