@@ -1,0 +1,13 @@
+# Command: journalctl -b -o json --no-pager 2>/dev/null | jq -r '._SYSTEMD_UNIT' | sort | uniq -c | sort -nr | head -n 10
+# Timestamp: 2026-11-17T15:58:35+05:00
+   3699 NetworkManager.service
+   3677 null
+   2763 archlinux-keyring-wkd-sync.service
+   1813 user@1000.service
+   1206 wpa_supplicant.service
+   1125 init.scope
+    788 bluetooth.service
+    408 dirmngr@etc-pacman.d-gnupg.service
+    318 user@60578.service
+    199 avahi-daemon.service
+# End of 05-top-units.txt

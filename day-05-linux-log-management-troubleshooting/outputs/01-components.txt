@@ -1,0 +1,6 @@
+# Command: systemctl is-active systemd-journald; systemctl is-active rsyslog || true; systemctl is-active syslog-ng || true
+# Timestamp: 2026-11-17T15:58:33+05:00
+active
+inactive
+inactive
+# End of 01-components.txt

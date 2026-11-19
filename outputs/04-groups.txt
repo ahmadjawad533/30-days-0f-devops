@@ -1,0 +1,4 @@
+# Command: id -Gn | tr ' ' '\n' | grep -E 'systemd-journal|adm|wheel' || true
+# Timestamp: 2026-11-17T16:02:50+05:00
+wheel
+# End of 04-groups.txt
