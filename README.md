@@ -18,7 +18,7 @@ Welcome to **30 Days of DevOps: From Linux Administration to AWS Cloud Engineeri
 | **Phase 2** | **Docker and Containers** | | | |
 | 06 | Docker Architecture Explained: Images, Containers and Docker Engine | Planned | TBD | TBD |
 | 07 | Writing Production-Ready Dockerfiles: Containerizing a Python Application | Planned | TBD | TBD |
-| 08 | Docker Volumes and Networking: Managing Container Data and Communication | Planned | TBD | TBD |
+| 08 | Docker Volumes and Networking: Managing Container Data and Communication | In progress | TBD | [day-08-docker-volumes-networking/](day-08-docker-volumes-networking/) |
 | 09 | Docker Compose: Running Multi-Container Applications | Planned | TBD | TBD |
 | 10 | Docker Security Best Practices: Building Smaller and Safer Containers | Planned | TBD | TBD |
 | **Phase 3** | **AWS Cloud Infrastructure** | | | |
