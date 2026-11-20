@@ -1,0 +1,12 @@
+# Command: unshare --user --map-root-user --pid --uts --net --fork sh -c 'readlink /proc/self/ns/user /proc/self/ns/pid /proc/self/ns/uts /proc/self/ns/net'
+# Timestamp: 2026-11-20T07:31:05Z
+user:[4026532465]
+pid:[4026532682]
+uts:[4026532681]
+net:[4026532683]
+# End of 06-ns-comparison.txt
+# Host namespace links:
+user:[4026531837]
+pid:[4026531836]
+uts:[4026531838]
+net:[4026531833]

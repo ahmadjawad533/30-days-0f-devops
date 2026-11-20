@@ -1,0 +1,11 @@
+# Command: id -u && hostname && readlink -f /proc/self/ns/{pid,mnt,uts,net,user,ipc}
+# Timestamp: 2026-11-20T07:31:05Z
+1000
+cachyos-x8664
+/proc/11136/ns/pid:[4026531836]
+/proc/11136/ns/mnt:[4026531832]
+/proc/11136/ns/uts:[4026531838]
+/proc/11136/ns/net:[4026531833]
+/proc/11136/ns/user:[4026531837]
+/proc/11136/ns/ipc:[4026531839]
+# End of 01-host-baseline.txt
