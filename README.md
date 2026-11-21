@@ -19,7 +19,7 @@ Welcome to **30 Days of DevOps: From Linux Administration to AWS Cloud Engineeri
 | 06 | Docker Architecture Explained: Images, Containers and Docker Engine | Completed | [Day 06 Article](https://builder.aws.com/content/3MJfF6pTzKEqeFjtTUuFU362Gf7/day-06-docker-architecture-explained-images-containers-and-docker-engine) | [day-06-docker-architecture](day-06-docker-architecture) |
 | 07 | Writing Production-Ready Dockerfiles: Containerizing a Python Application | Completed | [Day 07 Article](https://builder.aws.com/content/3MMSIJtnhgAdSVxmVap6jWQdfB7/day-07-writing-production-ready-dockerfiles-containerizing-a-python-application) | [day-07-production-ready-dockerfiles](day-07-production-ready-dockerfiles) |
 | 08 | Docker Volumes and Networking: Managing Container Data and Communication | Completed | [Day 08 Article](https://builder.aws.com/content/3MPLxsoQpPClY4CZwDbzZ1XyEor/day-08-docker-volumes-and-networking-managing-container-data-and-communication) | [day-08-docker-volumes-networking/](day-08-docker-volumes-networking/) |
-| 09 | Docker Compose: Running Multi-Container Applications | Planned | TBD | TBD |
+| 09 | Docker Compose: Running Multi-Container Applications | In progress | TBD | [day-09-docker-compose/](day-09-docker-compose/) |
 | 10 | Docker Security Best Practices: Building Smaller and Safer Containers | Planned | TBD | TBD |
 | **Phase 3** | **AWS Cloud Infrastructure** | | | |
 | 11 | AWS Cloud Computing Explained: Regions, Availability Zones and Core Services | Planned | TBD | TBD |
