@@ -8,17 +8,17 @@ Welcome to **30 Days of DevOps: From Linux Administration to AWS Cloud Engineeri
 
 | Day | Topic | Status | Article | Code |
 | :---: | :--- | :---: | :---: | :---: |
-| - | Series introduction | Planned | TBD | TBD |
+| 00 | Series introduction | Completed | [Day 00 Article](https://builder.aws.com/content/3Lz9ndVRwjr1F6nPo1vyMFwcM3w/day-00-welcome-to-30-days-of-devops-from-linux-administration-to-aws-cloud-engineering) | [day-00](30-days-0f-devops) |
 | **Phase 1** | **Linux and Automation** | | | |
-| 01 | Linux Architecture Explained: What Every DevOps Engineer Should Know | In progress | TBD | [day-01-linux-architecture/](day-01-linux-architecture/) |
-| 02 | Linux Server Administration: Users, Groups and File Permissions | In progress | TBD | [day-02-users-groups-permissions/](day-02-users-groups-permissions/) |
-| 03 | Linux Process and Service Management with systemd | In progress | TBD | [day-03-systemd-process-service-management/](day-03-systemd-process-service-management/) |
-| 04 | Bash Scripting for DevOps: Automating Everyday Linux Tasks | In progress | TBD | [day-04-bash-scripting-devops-automation/](day-04-bash-scripting-devops-automation/) |
-| 05 | Linux Log Management and Troubleshooting for Cloud Engineers | In progress | TBD | [day-05-linux-log-management-troubleshooting/](day-05-linux-log-management-troubleshooting/) |
+| 01 | Linux Architecture Explained: What Every DevOps Engineer Should Know | Completed | TBD | [day-01-linux-architecture/](day-01-linux-architecture/) |
+| 02 | Linux Server Administration: Users, Groups and File Permissions | Completed | TBD | [day-02-users-groups-permissions/](day-02-users-groups-permissions/) |
+| 03 | Linux Process and Service Management with systemd | Completed | TBD | [day-03-systemd-process-service-management/](day-03-systemd-process-service-management/) |
+| 04 | Bash Scripting for DevOps: Automating Everyday Linux Tasks | Completed | TBD | [day-04-bash-scripting-devops-automation/](day-04-bash-scripting-devops-automation/) |
+| 05 | Linux Log Management and Troubleshooting for Cloud Engineers | Completed | TBD | [day-05-linux-log-management-troubleshooting/](day-05-linux-log-management-troubleshooting/) |
 | **Phase 2** | **Docker and Containers** | | | |
-| 06 | Docker Architecture Explained: Images, Containers and Docker Engine | Planned | TBD | [day-06-docker-architecture](day-06-docker-architecture) |
-| 07 | Writing Production-Ready Dockerfiles: Containerizing a Python Application | Planned | TBD | [day-07-production-ready-dockerfiles](day-07-production-ready-dockerfiles) |
-| 08 | Docker Volumes and Networking: Managing Container Data and Communication | In progress | TBD | [day-08-docker-volumes-networking/](day-08-docker-volumes-networking/) |
+| 06 | Docker Architecture Explained: Images, Containers and Docker Engine | Completed | TBD | [day-06-docker-architecture](day-06-docker-architecture) |
+| 07 | Writing Production-Ready Dockerfiles: Containerizing a Python Application | Completed | TBD | [day-07-production-ready-dockerfiles](day-07-production-ready-dockerfiles) |
+| 08 | Docker Volumes and Networking: Managing Container Data and Communication | Completed | TBD | [day-08-docker-volumes-networking/](day-08-docker-volumes-networking/) |
 | 09 | Docker Compose: Running Multi-Container Applications | Planned | TBD | TBD |
 | 10 | Docker Security Best Practices: Building Smaller and Safer Containers | Planned | TBD | TBD |
 | **Phase 3** | **AWS Cloud Infrastructure** | | | |
