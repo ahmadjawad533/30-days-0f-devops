@@ -16,7 +16,7 @@ Welcome to **30 Days of DevOps: From Linux Administration to AWS Cloud Engineeri
 | 04 | Bash Scripting for DevOps: Automating Everyday Linux Tasks | In progress | TBD | [day-04-bash-scripting-devops-automation/](day-04-bash-scripting-devops-automation/) |
 | 05 | Linux Log Management and Troubleshooting for Cloud Engineers | In progress | TBD | [day-05-linux-log-management-troubleshooting/](day-05-linux-log-management-troubleshooting/) |
 | **Phase 2** | **Docker and Containers** | | | |
-| 06 | Docker Architecture Explained: Images, Containers and Docker Engine | Planned | TBD | TBD |
+| 06 | Docker Architecture Explained: Images, Containers and Docker Engine | Planned | TBD | [day-06-docker-architecture](day-06-docker-architecture) |
 | 07 | Writing Production-Ready Dockerfiles: Containerizing a Python Application | Planned | TBD | [day-07-production-ready-dockerfiles](day-07-production-ready-dockerfiles) |
 | 08 | Docker Volumes and Networking: Managing Container Data and Communication | In progress | TBD | [day-08-docker-volumes-networking/](day-08-docker-volumes-networking/) |
 | 09 | Docker Compose: Running Multi-Container Applications | Planned | TBD | TBD |
