@@ -1,18 +1,7 @@
-# Observations and Notes
+# Notes
 
-Use this document to capture your reflections, findings, and troubleshooting steps after running this lab.
+Feel free to record any observations, troubleshooting steps, or ideas for extending this lab.
 
----
-
-## What surprised me
-<!-- Note any unexpected system behaviors, metrics, or insights discovered during the lab -->
-
----
-
-## What failed and why
-<!-- Document errors, missing prerequisites, or commands that failed, along with their root causes -->
-
----
-
-## What I would change
-<!-- Note how you would adapt, optimize, or automate these steps in a production workflow -->
+- Verify that the `.env` file is **never** committed.
+- When experimenting with different PostgreSQL images, update `.env.example` accordingly.
+- If you encounter a port conflict on `18100`, adjust the `ports` mapping in `compose.yaml` and update this README.
