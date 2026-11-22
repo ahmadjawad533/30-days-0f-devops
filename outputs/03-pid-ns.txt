@@ -1,0 +1,6 @@
+# Command: unshare --user --map-root-user --pid --fork --mount-proc sh -c 'echo "my pid: 11130"; ps -o pid,ppid,comm'
+# Timestamp: 2026-11-20T07:31:05Z
+my pid: 11130
+    PID    PPID COMMAND
+      1       0 ps
+# End of 03-pid-ns.txt

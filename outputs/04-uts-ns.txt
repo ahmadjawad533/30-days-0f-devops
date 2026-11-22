@@ -1,0 +1,5 @@
+# Command: unshare --user --map-root-user --uts sh -c 'hostname lab06-demo; hostname'
+# Timestamp: 2026-11-20T07:31:05Z
+lab06-demo
+# End of 04-uts-ns.txt
+# Host hostname after UTS demo: cachyos-x8664

@@ -1,0 +1,5 @@
+# Command: unshare --user --map-root-user sh -c 'id; cat /proc/self/uid_map'
+# Timestamp: 2026-11-20T07:31:05Z
+uid=0(root) gid=0(root) groups=0(root),65534(nobody)
+         0       1000          1
+# End of 02-user-ns.txt

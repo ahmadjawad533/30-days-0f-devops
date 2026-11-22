@@ -1,0 +1,5 @@
+# Command: ls -ld /var/log/journal /run/log/journal 2>/dev/null || true
+# Timestamp: 2026-11-17T16:02:50+05:00
+drwxr-sr-x+ 2 root systemd-journal 40 Nov 13 10:40 /run/log/journal
+drwxr-sr-x+ 1 root systemd-journal 64 Sep 21 19:20 /var/log/journal
+# End of 02-journal-storage.txt

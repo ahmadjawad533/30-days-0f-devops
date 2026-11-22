@@ -1,0 +1,17 @@
+# Exclude version control and caches
+.git
+.gitignore
+__pycache__
+*.pyc
+venv
+.venv
+tmp
+lab-workdir
+outputs
+docs
+docker-lab
+*.md
+Dockerfile.naive
+.env*
+*.pem
+*.key

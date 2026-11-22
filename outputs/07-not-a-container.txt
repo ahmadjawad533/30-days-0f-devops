@@ -1,0 +1,1 @@
+This demonstration uses only Linux kernel namespaces. No Docker image, no cgroup limits, no seccomp, and no Docker daemon are involved.

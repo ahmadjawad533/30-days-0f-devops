@@ -1,0 +1,16 @@
+# Dockerfile.naive (deliberately flawed for teaching)
+# FLAW: Using floating tag "latest" – not reproducible
+FROM python:latest
+
+# FLAW: Copy all source before installing dependencies – leads to cache invalidation on any change
+COPY . /app
+WORKDIR /app
+
+# FLAW: Unpinned dependency installation – may change over time
+RUN pip install flask gunicorn
+
+# FLAW: Running as root (default user)
+# No USER instruction
+
+# FLAW: Shell-form CMD runs with /bin/sh, less explicit
+CMD python app.py

@@ -1,0 +1,6 @@
+# Command: systemctl is-enabled systemd-journald; systemctl is-enabled rsyslog || true; systemctl is-enabled syslog-ng || true
+# Timestamp: 2026-11-17T15:58:33+05:00
+static
+not-found
+not-found
+# End of 01-components-enabled.txt
