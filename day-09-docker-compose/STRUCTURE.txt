@@ -1,0 +1,22 @@
+# Day 09 – Docker Compose multi‑container lab
+
+## Repository structure
+
+- `README.md` – this file (already created).
+- `app/`
+  - `app.py` – minimal Flask app with health endpoint and visit counter backed by PostgreSQL.
+  - `requirements.in` – unpinned Python dependencies.
+- `Dockerfile` – build image for the web service.
+- `.dockerignore` – files to exclude from the Docker build context.
+- `compose.yaml` – Docker Compose definition.
+- `.env.example` – placeholder environment variables.
+- `.gitignore` – ignores generated `.env` and temporary files.
+- `static-checks.sh` – linting and sanity checks (run by automation).
+- `pin-requirements.sh` – script to generate a pinned `requirements.txt` (write‑only).
+- `compose-lab/`
+  - `README.md` – lab instructions and safety notes.
+  - `run-compose-lab.sh` – orchestrates the full Compose lab (write‑only).
+  - `cleanup-compose-lab.sh` – safe teardown (write‑only).
+- `NOTES.md` – template for personal notes.
+- `docs/compose-stack.md` – diagram and description of the Compose stack.
+- `outputs/` – placeholder `.gitkeep` (real outputs are generated when you run the lab).

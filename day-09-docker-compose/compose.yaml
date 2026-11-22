@@ -1,0 +1,45 @@
+services:
+  db:
+    image: "${POSTGRES_IMAGE:-postgres:15-alpine}"
+    container_name: "lab09-db"
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-lab09}
+      - POSTGRES_USER=${POSTGRES_USER:-lab09}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?Required}
+    labels:
+      project: "30days-lab09"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    # No host ports exposed for the database
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER:-lab09}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "lab09-web"
+    env_file:
+      - .env
+    labels:
+      project: "30days-lab09"
+    ports:
+      - "127.0.0.1:18100:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    # No privileged flags
+
+volumes:
+  db-data:
+    name: "lab09-db-data"
+    driver: local
+
+networks:
+  default:
+    name: "lab09-network"
+    driver: bridge
