@@ -1,0 +1,2 @@
+# 2026-11-24T05:02:30Z
+The AWS inventory script was not executed by the agent; it will be run by the author with a non‑root credential.

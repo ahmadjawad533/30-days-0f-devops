@@ -1,0 +1,1 @@
+Shellcheck not installed – skipping
